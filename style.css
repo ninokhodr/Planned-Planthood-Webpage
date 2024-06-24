@@ -1,0 +1,655 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+body {
+  background-color: rgb(252, 245, 252);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background-color: rgb(255, 255, 255);
+  width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header-left {
+  display: flex;
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1615671524701-9c3dde8fdaa0?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 189px;
+}
+
+.header-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header-top-right {
+  background-color: rgb(158, 109, 82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-bottom-right {
+  background-color: rgb(10, 132, 110);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-top-right img,
+.header-bottom-right img {
+  width: 176px;
+  object-fit: contain;
+}
+
+.nav-menu {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(15, 15, 15, 0.1);
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin: 0 5rem;
+}
+
+.footer-left h3 {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.nav-menu a {
+  color: #006341;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.season-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2em;
+}
+
+.plant-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-title h1 {
+  display: flex;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  justify-content: center;
+  color: rgb(10, 132, 110);
+}
+
+.section-divider {
+  display: flex;
+  border: none;
+  border-top: 3px solid #0a846e;
+  width: 30%;
+  margin: 20px auto;
+  margin-top: 4rem;
+}
+
+.planned-plantings-title {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planned-plantings-title h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.plant-details {
+  display: grid;
+  flex: 1.5;
+}
+
+.plant-details h2 {
+  margin-bottom: 1rem;
+  font-size: 32px;
+  margin-left: 4rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.plant-details p {
+  font-size: 16px;
+  margin-left: 4rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+.plant-tips {
+  background-color: rgb(10, 132, 110);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 24px;
+  cursor: pointer;
+  width: 179px;
+  padding: 1rem;
+  margin-left: 22rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.plant-image {
+  background-color: rgb(10, 132, 110);
+  height: 377px;
+  width: 377px;
+  border-radius: 50%;
+}
+
+.plant-tips:hover {
+  background-color: #004d2d;
+}
+
+.planned-plantings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 932px;
+  margin: 0 auto;
+}
+
+.plant-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.plant-bg {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.plant-card:nth-child(1) .plant-bg {
+  background-image: url("https://images.unsplash.com/photo-1518568403628-df55701ade9e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.plant-card:nth-child(2) .plant-bg {
+  background-image: url("https://images.unsplash.com/photo-1596199050105-6d5d32222916?q=80&w=2639&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.plant-card:nth-child(3) .plant-bg {
+  background-image: url("https://images.unsplash.com/photo-1565698228480-eec300c9679b?q=80&w=2806&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.plant-card:nth-child(4) .plant-bg {
+  background-image: url("https://images.unsplash.com/photo-1687878269804-63e8b50e3ddc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.plant-card:nth-child(5) .plant-bg {
+  background-image: url("https://images.unsplash.com/photo-1555447740-03e40562af94?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.plant-card:nth-child(6) .plant-bg {
+  background-image: url("https://images.unsplash.com/photo-1627989230968-d0b8e2d1a398?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.overlay-img {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.card-details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.title-date,
+.person-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.plant-card h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+
+.date {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.person {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.plant-card button {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgba(185, 56, 87, 1);
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 0.5rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  cursor: pointer;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.load-more {
+  background-color: rgb(10, 132, 110);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.past-plantings {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.plant-image-bottom {
+  background-color: rgb(10, 132, 110);
+  height: 377px;
+  width: 377px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.plant-image-bottom img {
+  width: 50%;
+  height: auto;
+}
+
+.past-plant-details {
+  max-width: 50%;
+  padding: 2rem;
+}
+
+.past-plant-details h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+.past-plant-details p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.past-plant-btn {
+  background-color: rgb(10, 132, 110);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.past-plant-btn:hover {
+  background-color: #004d2d;
+}
+
+footer {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.footer-main {
+  background-image: url("https://images.unsplash.com/photo-1586281010691-f9da4be5b1f7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  width: 100%;
+  height: 30rem;
+  z-index: 0;
+}
+
+.footer-left {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.678);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-left h3 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  margin-top: auto;
+}
+
+.footer-contact {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Maven Pro", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.footer-contact p img {
+  margin-left: 0.5rem;
+  width: 20px;
+  height: auto;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.footer-logo {
+  width: 50%;
+  height: auto;
+}
+
+.back-to-top {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .header-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-left {
+    grid-row: 1 / 2;
+    height: 60vh;
+  }
+
+  .header-right {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-top-right,
+  .header-bottom-right {
+    flex: 1;
+    height: 30vh;
+  }
+
+  .header-top-right img,
+  .header-bottom-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .header-top-right,
+  .header-bottom-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-top-right img,
+  .header-bottom-right img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .season-info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .plant-image {
+    background-color: rgb(10, 132, 110);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .plant-image img {
+    width: 50%;
+    height: auto;
+  }
+
+  .plant-details {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plant-details h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .plant-details p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .plant-tips {
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .past-plantings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .plant-image-bottom {
+    background-color: rgb(10, 132, 110);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .plant-image-bottom img {
+    width: 50%;
+    height: auto;
+  }
+
+  .past-plant-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .past-plant-details h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .past-plant-details p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .past-plant-btn {
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer-main {
+    background-image: url("https://images.unsplash.com/photo-1586281010691-f9da4be5b1f7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-left {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .footer-left h3 {
+    margin: 0.5rem 0;
+  }
+
+  .footer-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .planned-plantings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
