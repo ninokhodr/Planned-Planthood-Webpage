@@ -185,6 +185,10 @@ body {
   background-color: #004d2d;
 }
 
+.load-more:hover {
+  background-color: #004d2d;
+}
+
 .planned-plantings {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -451,6 +455,12 @@ footer {
   font-size: 20px;
 }
 
+.trash-menu {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+}
+
 .burger-menu {
   display: none;
   position: absolute;
@@ -512,6 +522,10 @@ footer {
     display: block;
   }
 
+  .trash-menu {
+    display: block;
+    
+  }
   .nav-menu {
     display: none;
   }
@@ -521,6 +535,7 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    margin-right: 2rem;
   }
 
   .plant-image {
@@ -626,9 +641,10 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
+  }
+
+  .footer-left p {
+    margin-top: 15rem;
   }
 
   .footer-left h3 {
@@ -652,4 +668,14 @@ footer {
   .planned-plantings {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .load-more-container {
+    margin-right: 2rem;
+  }
+
+  .plant-card button {
+    display: none;
+  }
+
+ 
 }

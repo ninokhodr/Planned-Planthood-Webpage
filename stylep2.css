@@ -424,7 +424,7 @@ footer {
   text-align: center;
   color: black;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .burger-menu {
@@ -435,6 +435,12 @@ footer {
   width: 30px;
   height: auto;
   cursor: pointer;
+}
+
+.trash-menu {
+  display: none;
+  cursor: pointer;
+  width: 30px;
 }
 
 .add-planting {
@@ -729,5 +735,13 @@ footer {
     margin-top: 20rem;
     justify-content: center;
     display: grid;
+  }
+
+  .trash-menu {
+    display: block;
+  }
+
+  .plant-card button {
+    display: none;
   }
 }
